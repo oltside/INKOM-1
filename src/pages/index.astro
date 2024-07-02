@@ -1,32 +1,31 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from "../layouts/Layout.astro";
+import "../layouts/font.css";
 ---
 
 <Layout title="Inkom">
 	<section
-		class="h-screen bg-no-repeat"
+		class="h-screen bg-no-repeat pt-[23px]"
 		style="background-image: url(/hero-phone.png);"
 	>
-		<header
-			class="header ml-[300px] mr-[300px] flex items-center mb-[180px]"
-		>
+		<header class="header ml-[300px] flex items-center mb-[180px]">
 			<div class="content flex">
-				<div class="left flex mr-[118px]">
+				<div class="left flex mr-auto">
 					<div class="mr-[110px] flex items-center">
 						<a href="#" class="flex flex-col mr-[110px]">
 							<h1
-								class="text-white text-[51px] font-[400] font-museo"
+								class="text-white text-[51px] font-[900] h-14 uppercase font-museo"
 							>
 								Инком
 							</h1>
 							<h2
-								class="text-[#CFA55B] text-[27px] font-[400] font-museo"
+								class="text-[#CFA55B] text-[27px] font-[700] font-museo"
 							>
 								Недвижимость
 							</h2>
 						</a>
 						<p
-							class="text-white text-[18px] font-[400] font-museo w-[43%]"
+							class="text-white text-[18px] font-[500] font-museo w-[43%]"
 						>
 							Все работаю с недвижимостью, а мы с людьми
 						</p>
@@ -35,11 +34,12 @@ import Layout from '../layouts/Layout.astro'
 				<div class="right flex items-center">
 					<a
 						href="tel:+76845550102"
-						class="text-white text-[24px] font-[400] font-museo mr-[40px] w-[57%]"
+						class="text-white text-[24px] font-[700] transition-all hover:text-[#FFC256] active:text-[#CFA55B] font-museo mr-[40px] w-[57%]"
 						>+7 (684) 555-01-02</a
 					>
 					<button
-						class="text-[#FFC256] text-[14px] font-[400] font-museo px-[25px] py-[15px] rounded-[5px] border-sodil border-[#FFC256] border-[2px]"
+						class="text-[#FFC256] w-[262px] hover:text-white hover:bg-[#FFC256] active:bg-[#CFA55B] active:border-[#CFA55B] transition-all text-[14px] font-[700]
+						 font-museo px-[25px] py-[15px] rounded-[5px] border-sodil border-[#FFC256] border-[2px]"
 						style="box-shadow: 0px 0px 30px 0px #FFC256;"
 					>
 						Бесплатная консультация
@@ -53,7 +53,7 @@ import Layout from '../layouts/Layout.astro'
 				<div class="top">
 					<div class="flex items-center relative">
 						<h2
-							class="text-white text-[36px] font-[400] font-museo w-[580px] mb-[83px]"
+							class="text-white text-[36px] font-[900] font-museo w-[580px] mb-[83px]"
 						>
 							Агентство недвижимости <span
 								class="text-[36px] text-[#CFA55B] font-[900] font-museo"
@@ -82,13 +82,11 @@ import Layout from '../layouts/Layout.astro'
 						>
 					</div>
 					<div
-						class="p-[7px] border-[1px] border-solid border-[#CFA55B] mb-[156px] w-fit"
+						class="p-[7px] border-[1px] transition-all border-solid border-[#CFA55B] mb-[156px] w-fit"
 					>
 						<button
-							class="text-white text-[16px] font-[400] font-museo py-[30px] px-[44px] rounded-[5px] w-[350px]"
-							style="background: #CFA55B;
-
-					box-shadow: 0px 0px 60px 0px rgba(255, 194, 86, 0.50);
+							class="text-white text-[16px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B] font-[900] font-museo py-[30px] px-[44px] rounded-[5px] w-[350px]"
+							style="box-shadow: 0px 0px 60px 0px rgba(255, 194, 86, 0.50);
 					#CFA55B
 					"
 							>УЗНАТЬ СТОИМОСТЬ ПРОДАЖИ
@@ -132,7 +130,7 @@ import Layout from '../layouts/Layout.astro'
 	<section class="pt-[78px] pb-[118px]">
 		<div class="mx-[300px]">
 			<h2
-				class="text-center text-[#424242] text-[36px] font-[400] font-museo mb-[51px]"
+				class="text-center text-[#424242] text-[36px] font-[900] font-museo mb-[51px]"
 			>
 				Почему мы продаем дорого и делаем это в <span
 					class="text-[#CFA55B]">2 раза быстрее</span
@@ -141,12 +139,12 @@ import Layout from '../layouts/Layout.astro'
 			<div class="all flex mb-[74px]">
 				<div class="right mr-auto">
 					<p
-						class="mb-[24px] text-[#CFA55B] text-[96px] font-[900] uppercase opacity-[0.3]"
+						class="mb-[24px] text-[#CFA55B] text-[96px] font-roboto font-[900] uppercase opacity-[0.3]"
 					>
 						01
 					</p>
 					<h3
-						class="mb-[42px] text-[#424242] text-[30px] font-[400] uppercase font-museo"
+						class="mb-[42px] text-[#424242] text-[30px] font-[900] uppercase font-museo"
 					>
 						Собственная база покупателей
 					</h3>
@@ -210,7 +208,7 @@ import Layout from '../layouts/Layout.astro'
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[400] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo"
 							>
 								Создаем спрос на объект еще до размещения его в
 								рекламе
@@ -275,7 +273,7 @@ import Layout from '../layouts/Layout.astro'
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[400] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo"
 							>
 								Используем закрытые базы риэлторов
 							</p>
@@ -339,7 +337,7 @@ import Layout from '../layouts/Layout.astro'
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[400] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo"
 							>
 								Продаем через собственную наработанную базу из
 								6000
@@ -347,8 +345,8 @@ import Layout from '../layouts/Layout.astro'
 						</li>
 					</ul>
 					<button
-						class="text-white text-[18px] font-[700] font-roboto py-[32px] px-[74px] rounded-[5px]"
-						style="background: #CFA55B;
+						class="text-white text-[18px] font-[900] font-museo py-[32px] px-[74px] rounded-[5px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B]"
+						style="
 					box-shadow: 0px 20px 40px 0px rgba(207, 165, 91, 0.40);"
 						>Получите превью предложения</button
 					>
@@ -368,12 +366,12 @@ import Layout from '../layouts/Layout.astro'
 				</div>
 				<div class="right ml-auto">
 					<p
-						class="mb-[24px] text-[#CFA55B] text-[96px] font-[900] uppercase opacity-[0.3]"
+						class="mb-[24px] text-[#CFA55B] text-[96px] font-roboto font-[900] uppercase opacity-[0.3]"
 					>
 						02
 					</p>
 					<h3
-						class="mb-[42px] text-[#424242] text-[30px] font-[400] uppercase font-museo"
+						class="mb-[42px] text-[#424242] text-[30px] font-[900] uppercase font-museo"
 					>
 						Собственная база покупателей
 					</h3>
@@ -437,7 +435,7 @@ import Layout from '../layouts/Layout.astro'
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[400] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo"
 							>
 								Создаем спрос на объект еще до размещения его в
 								рекламе
@@ -502,7 +500,7 @@ import Layout from '../layouts/Layout.astro'
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[400] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo"
 							>
 								Используем закрытые базы риэлторов
 							</p>
@@ -566,7 +564,7 @@ import Layout from '../layouts/Layout.astro'
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[400] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo"
 							>
 								Продаем через собственную наработанную базу из
 								6000
@@ -574,8 +572,8 @@ import Layout from '../layouts/Layout.astro'
 						</li>
 					</ul>
 					<button
-						class="text-white text-[18px] font-[700] font-roboto py-[32px] px-[74px] rounded-[5px]"
-						style="background: #CFA55B;
+						class="text-white text-[18px] font-[900] font-museo py-[32px] px-[74px] rounded-[5px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B]"
+						style="
 					box-shadow: 0px 20px 40px 0px rgba(207, 165, 91, 0.40);"
 						>Получите превью предложения</button
 					>
@@ -585,12 +583,12 @@ import Layout from '../layouts/Layout.astro'
 			<div class="all flex">
 				<div class="right mr-auto">
 					<p
-						class="mb-[24px] text-[#CFA55B] text-[96px] font-[900] uppercase opacity-[0.3]"
+						class="mb-[24px] text-[#CFA55B] text-[96px] font-roboto font-[900] uppercase opacity-[0.3]"
 					>
 						03
 					</p>
 					<h3
-						class="mb-[42px] text-[#424242] text-[30px] font-[400] uppercase font-museo"
+						class="mb-[42px] text-[#424242] text-[30px] font-[900] uppercase font-museo"
 					>
 						Собственная база покупателей
 					</h3>
@@ -654,7 +652,7 @@ import Layout from '../layouts/Layout.astro'
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[400] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo"
 							>
 								Создаем спрос на объект еще до размещения его в
 								рекламе
@@ -719,7 +717,7 @@ import Layout from '../layouts/Layout.astro'
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[400] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo"
 							>
 								Используем закрытые базы риэлторов
 							</p>
@@ -783,7 +781,7 @@ import Layout from '../layouts/Layout.astro'
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[400] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo"
 							>
 								Продаем через собственную наработанную базу из
 								6000
@@ -791,8 +789,8 @@ import Layout from '../layouts/Layout.astro'
 						</li>
 					</ul>
 					<button
-						class="text-white text-[18px] font-[700] font-roboto py-[32px] px-[74px] rounded-[5px]"
-						style="background: #CFA55B;
+						class="text-white text-[18px] font-[900] font-museo py-[32px] px-[74px] rounded-[5px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B]"
+						style="
 					box-shadow: 0px 20px 40px 0px rgba(207, 165, 91, 0.40);"
 						>Получите превью предложения</button
 					>
@@ -815,20 +813,20 @@ import Layout from '../layouts/Layout.astro'
 		>
 			<div class="left flex flex-col justify-center mr-auto w-[45%]">
 				<h2
-					class="mb-[53px] text-[36px] text-white font-[400] w-[80%] font-museo"
+					class="mb-[53px] text-[36px] text-white font-[900] w-[80%] font-museo"
 				>
 					<span class="text-[#CFA55B]">Продажа недвижимости</span> в Москве
 					и Подмосковье
 				</h2>
 				<p
-					class="mb-[29px] text-white text-[18px] font-[400] font-museo"
+					class="mb-[29px] text-white text-[18px] font-[700] font-museo"
 				>
 					Мы оказываем риэлторские услуги по аренде и продаже
 					недвижимости во всех сегментах. С помощью наших специалистов
 					вы сможете купить элитную недвижимость в Москве и
 					Подмосковье, а также приобрести жилье эконом-класса .
 				</p>
-				<p class="text-white text-[18px] font-[400] font-museo">
+				<p class="text-white text-[18px] font-[700] font-museo">
 					Специалисты нашего агентства помогут в подборе оптимального
 					для вас варианта и оформят сделку по купле-продаже
 					недвижимости максимально надежно и быстро!
@@ -847,13 +845,13 @@ import Layout from '../layouts/Layout.astro'
 			"
 				>
 					<h3
-						class="text-[#424242] text-[24px] font-[400] font-museo mb-[23px]"
+						class="text-[#424242] text-[24px] font-[900] font-museo mb-[23px]"
 					>
 						Продайте недвижимость в залоге, ипотеке или с долгами
 						без потери в цене
 					</h3>
 					<p
-						class="text-[#424242] text-[14px] font-[400] font-museo mb-[37px]"
+						class="text-[#424242] text-[14px] font-[500] font-museo mb-[37px]"
 					>
 						Агентство недвижимости ИНКОМ — все риэлторские услуги:
 						покупка, продажа, обмен, аренда жилой и коммерческой
@@ -919,7 +917,7 @@ import Layout from '../layouts/Layout.astro'
 							</svg>
 
 							<p
-								class="text-[#424242] text-[14px] font-[400] font-museo mb-[25px]"
+								class="text-[#424242] text-[14px] font-[500] font-museo mb-[25px]"
 							>
 								<span class="text-[#CFA55B]">Создаем спрос</span
 								> на объект еще до размещения его в рекламе
@@ -984,7 +982,7 @@ import Layout from '../layouts/Layout.astro'
 							</svg>
 
 							<p
-								class="text-[#424242] text-[14px] font-[400] font-museo mb-[30px]"
+								class="text-[#424242] text-[14px] font-[500] font-museo mb-[30px]"
 							>
 								Используем <span class="text-[#CFA55B]"
 									>закрытые базы риэлторов</span
@@ -1050,7 +1048,7 @@ import Layout from '../layouts/Layout.astro'
 							</svg>
 
 							<p
-								class="text-[#424242] text-[14px] font-[400] font-museo"
+								class="text-[#424242] text-[14px] font-[500] font-museo"
 							>
 								Продаем через собственную наработанную базу из <span
 									class="text-[#CFA55B]">6000</span
@@ -1059,8 +1057,8 @@ import Layout from '../layouts/Layout.astro'
 						</li>
 					</ul>
 					<button
-						class="text-white text-[18px] font-[400] font-museo py-[25px] px-[94px] rounded-[5px]"
-						style="background: #CFA55B;
+						class="text-white text-[18px] font-[900] font-museo py-[25px] px-[94px] rounded-[5px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B]"
+						style="
 				box-shadow: 0px 4px 25px 0px rgba(207, 165, 91, 0.50);"
 						>Больше информации</button
 					>
@@ -1080,36 +1078,36 @@ import Layout from '../layouts/Layout.astro'
 			<ul class="flex gap-[38px]">
 				<li>
 					<button
-						class="text-[#CFA55B] text-center text-[16px] font-[400] font-museo px-[43px] py-[23px] transition-all hover:bg-[#CFA55B] hover:text-[white]"
-						style="border-radius: 5px;
-				border: 2px solid #CFA55B;"
+						class="text-[#CFA55B] border-[2px] border-[solid] border-[#CFA55B] text-center text-[16px] font-[900] font-museo px-[43px] py-[23px] transition-all
+						 hover:bg-[#CFA55B] hover:text-[white] active:bg-[#FFC256] active:border-[#FFC256]"
+						style="border-radius: 5px;"
 					>
 						Квартиры и новостройки</button
 					>
 				</li>
 				<li>
 					<button
-						class="text-[#CFA55B] text-center text-[16px] font-[400] font-museo px-[43px] py-[23px] transition-all hover:bg-[#CFA55B] hover:text-[white]"
-						style="border-radius: 5px;
-				border: 2px solid #CFA55B;"
+						class="text-[#CFA55B] border-[2px] border-[solid] border-[#CFA55B] text-center text-[16px] font-[900] font-museo px-[43px] py-[23px] transition-all
+						hover:bg-[#CFA55B] hover:text-[white] active:bg-[#FFC256] active:border-[#FFC256]"
+						style="border-radius: 5px;"
 					>
 						Новостройки</button
 					>
 				</li>
 				<li>
 					<button
-						class="text-[#CFA55B] text-center text-[16px] font-[400] font-museo px-[43px] py-[23px] transition-all hover:bg-[#CFA55B] hover:text-[white]"
-						style="border-radius: 5px;
-				border: 2px solid #CFA55B;"
+						class="text-[#CFA55B] border-[2px] border-[solid] border-[#CFA55B] text-center text-[16px] font-[900] font-museo px-[43px] py-[23px] transition-all
+						hover:bg-[#CFA55B] hover:text-[white] active:bg-[#FFC256] active:border-[#FFC256]"
+						style="border-radius: 5px;"
 					>
 						Аренда квартир и комнат</button
 					>
 				</li>
 				<li>
 					<button
-						class="text-[#CFA55B] text-center text-[16px] font-[400] font-museo px-[43px] py-[23px] transition-all hover:bg-[#CFA55B] hover:text-[white]"
-						style="border-radius: 5px;
-				border: 2px solid #CFA55B;"
+						class="text-[#CFA55B] border-[2px] border-[solid] border-[#CFA55B] text-center text-[16px] font-[900] font-museo px-[43px] py-[23px] transition-all
+						hover:bg-[#CFA55B] hover:text-[white] active:bg-[#FFC256] active:border-[#FFC256]"
+						style="border-radius: 5px;"
 					>
 						Загородная</button
 					>
@@ -1150,12 +1148,12 @@ import Layout from '../layouts/Layout.astro'
 			</div>
 			<div class="mb-[47px]">
 				<p
-					class="text-[#CFA55B] text-[30px] font-[400] font-museo text-center"
+					class="text-[#CFA55B] text-[30px] font-[900] font-museo text-center"
 				>
 					3-комн. квартира, 125,4 м²
 				</p>
 				<p
-					class="text-[#424242] text-[18px] font-[400] font-museo text-center"
+					class="text-[#424242] text-[18px] font-[700] font-museo text-center"
 				>
 					в ЖК «Река», Квартал 10 корпус 1, сдача в 4 кв. 2021
 				</p>
@@ -1163,51 +1161,51 @@ import Layout from '../layouts/Layout.astro'
 			<ul class="w-[100%] flex" style="justify-content: space-between">
 				<li class="flex flex-col">
 					<p
-						class="text-[#CFA55B] text-[30px] font-[400] font-museo text-center"
+						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center"
 					>
 						125,4 м²
 					</p>
-					<p class="text-[#8C8C8C] text-[24px] font-[400] font-museo">
+					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo">
 						Общая
 					</p>
 				</li>
 				<li class="flex flex-col">
 					<p
-						class="text-[#CFA55B] text-[30px] font-[400] font-museo text-center"
+						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center"
 					>
 						97,9 м²
 					</p>
-					<p class="text-[#8C8C8C] text-[24px] font-[400] font-museo">
+					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo">
 						Жилая
 					</p>
 				</li>
 				<li class="flex flex-col">
 					<p
-						class="text-[#CFA55B] text-[30px] font-[400] font-museo text-center"
+						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center"
 					>
 						27,5 м²
 					</p>
-					<p class="text-[#8C8C8C] text-[24px] font-[400] font-museo">
+					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo">
 						Кухня
 					</p>
 				</li>
 				<li class="flex flex-col">
 					<p
-						class="text-[#CFA55B] text-[30px] font-[400] font-museo text-center"
+						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center"
 					>
 						7 из 11
 					</p>
-					<p class="text-[#8C8C8C] text-[24px] font-[400] font-museo">
+					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo">
 						Этаж
 					</p>
 				</li>
 				<li class="flex flex-col">
 					<p
-						class="text-[#CFA55B] text-[30px] font-[400] font-museo text-center"
+						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center"
 					>
 						2021
 					</p>
-					<p class="text-[#8C8C8C] text-[24px] font-[400] font-museo">
+					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo">
 						Срок сдачи
 					</p>
 				</li>
@@ -1221,12 +1219,12 @@ import Layout from '../layouts/Layout.astro'
 	>
 		<div class="ml-[300px] flex flex-col items-start justify-start">
 			<h2
-				class="text-white text-[36px] font-[400] font-museo mb-[30px] w-[50%]"
+				class="text-white text-[36px] font-[900] font-museo mb-[30px] w-[50%]"
 			>
 				Еще остались вопросы?
 			</h2>
 			<p
-				class="mb-[44px] text-white text-[18px] font-[400] font-museo w-[40%]"
+				class="mb-[44px] text-white text-[18px] font-[700] font-museo w-[40%]"
 			>
 				Наши эксперты помогут осуществить любые сделки с недвижимостью —
 				обмен, покупку или продажу недвижимости в Москве и области,
@@ -1249,9 +1247,8 @@ import Layout from '../layouts/Layout.astro'
 					box-shadow: 0px 4px 20px 0px rgba(66, 66, 66, 0.30);"
 				/>
 				<button
-					class="text-white text-[18px] font-[400] font-museo py-[25px] px-[39px]"
+					class="text-white text-[18px] font-[900] font-museo py-[25px] px-[39px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B]"
 					style="border-radius: 10px;
-				background: #CFA55B;
 				box-shadow: 0px 4px 60px 0px rgba(255, 194, 86, 0.40);"
 					>Получить консультацию</button
 				>
@@ -1277,13 +1274,13 @@ import Layout from '../layouts/Layout.astro'
 						fill="#CFA55B"></path>
 				</svg>
 				<p
-					class="text-[#424242] text-[14px] font-[400] font-museo w-[47%]"
+					class="text-[#424242] text-[14px] font-[500] font-museo w-[47%]"
 				>
 					610000 г. Киров, ул. Карла Маркса 21, офис 334
 				</p>
 			</div>
 			<div
-				class="left flex items-center text-[#424242] text-[24px] font-[400] font-museo uppercase"
+				class="left flex items-center text-[#424242] text-[24px] font-[700] font-museo uppercase transition-all hover:text-[#FFC256] active:text-[#CFA55B]"
 			>
 				<a href="tel:+76845550102">+7 (684) 555-01-02</a>
 			</div>
