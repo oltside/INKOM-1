@@ -5,41 +5,48 @@ import "../layouts/font.css";
 
 <Layout title="Inkom">
 	<section
-		class="h-screen bg-no-repeat pt-[23px]"
+		class="h-screen bg-no-repeat bg-cover pt-[23px]"
 		style="background-image: url(/hero-phone.png);"
 	>
-		<header class="header ml-[300px] flex items-center mb-[180px]">
-			<div class="content flex">
-				<div class="left flex mr-auto">
-					<div class="mr-[110px] flex items-center">
-						<a href="#" class="flex flex-col mr-[110px]">
+		<header
+			class="header ml-[300px] flex items-center mb-[180px] max-2xl:ml-[150px]"
+		>
+			<div class="content flex max-2xl:justify-center">
+				<div class="left mr-[114px] max-2xl:mr-[50px] flex">
+					<div class="flex items-center">
+						<a
+							href="#"
+							class="flex flex-col mr-[110px] max-2xl:mr-[82px]"
+						>
 							<h1
-								class="text-white text-[51px] font-[900] h-14 uppercase font-museo"
+								class="text-white text-[51px] font-[900] h-14 uppercase font-museo max-2xl:text-[41px]"
 							>
 								Инком
 							</h1>
 							<h2
-								class="text-[#CFA55B] text-[27px] font-[700] font-museo"
+								class="text-[#CFA55B] text-[27px] font-[700] font-museo max-2xl:text-[22px]"
 							>
 								Недвижимость
 							</h2>
 						</a>
 						<p
-							class="text-white text-[18px] font-[500] font-museo w-[43%]"
+							class="text-white text-[18px] font-[500] font-museo w-[40%] max-2xl:text-[15px] max-2xl:w-[46%]"
 						>
 							Все работаю с недвижимостью, а мы с людьми
 						</p>
 					</div>
 				</div>
-				<div class="right flex items-center">
+				<div class="right flex items-center w-[38%] max-2xl:w-[53%]">
 					<a
 						href="tel:+76845550102"
-						class="text-white text-[24px] font-[700] transition-all hover:text-[#FFC256] active:text-[#CFA55B] font-museo mr-[40px] w-[57%]"
+						class="text-white text-[24px] font-[700] transition-all hover:text-[#FFC256] active:text-[#CFA55B] font-museo mr-[40px] w-[63%]
+						max-2xl:text-[18px] max-2xl:w-[45%] max-2xl:mr-[0px]"
 						>+7 (684) 555-01-02</a
 					>
 					<button
-						class="text-[#FFC256] w-[262px] hover:text-white hover:bg-[#FFC256] active:bg-[#CFA55B] active:border-[#CFA55B] transition-all text-[14px] font-[700]
-						 font-museo px-[25px] py-[15px] rounded-[5px] border-sodil border-[#FFC256] border-[2px]"
+						class="text-[#FFC256] w-[63%] hover:text-white hover:bg-[#FFC256] active:bg-[#CFA55B] active:border-[#CFA55B] transition-all
+						 text-[14px] font-[700]
+						 font-museo px-[25px] py-[15px] rounded-[5px] border-sodil border-[#FFC256] border-[2px] max-2xl:text-[13px] max-2xl:w-[47%]"
 						style="box-shadow: 0px 0px 30px 0px #FFC256;"
 					>
 						Бесплатная консультация
@@ -49,23 +56,25 @@ import "../layouts/font.css";
 		</header>
 
 		<div class="hero">
-			<div class="flex flex-col mx-[300px] justify-center">
+			<div
+				class="flex flex-col mx-[300px] justify-center max-2xl:mx-[150px]"
+			>
 				<div class="top">
 					<div class="flex items-center relative">
 						<h2
-							class="text-white text-[36px] font-[900] font-museo w-[580px] mb-[83px]"
+							class="text-white text-[36px] font-[900] font-museo w-[580px] mb-[83px] max-2xl:text-[33px]"
 						>
 							Агентство недвижимости <span
-								class="text-[36px] text-[#CFA55B] font-[900] font-museo"
+								class="text-[#CFA55B] font-[900] font-museo"
 								>ИНКОМ</span
 							>
 							Мы гарантировано продадим вашу недвижимость на <span
-								class="text-[36px] text-[#CFA55B] font-[900] font-museo"
+								class="text-[#CFA55B] font-[900] font-museo"
 								>15% дороже</span
 							>
 						</h2>
 						<button
-							class="absolute left-[1060px] rounded-[50%] w-[63px] h-[63px] flex flex-col items-center justify-center"
+							class="absolute left-[1060px] rounded-[50%] w-[63px] h-[63px] flex flex-col items-center justify-center max-2xl:left-[770px]"
 							style="background-color: rgba(255, 190, 75, 0.30); box-shadow: 0px 0px 30px 0px #FFC256;"
 						>
 							<svg
@@ -82,10 +91,11 @@ import "../layouts/font.css";
 						>
 					</div>
 					<div
-						class="p-[7px] border-[1px] transition-all border-solid border-[#CFA55B] mb-[156px] w-fit"
+						class="p-[7px] border-[1px] transition-all border-solid border-[#CFA55B] mb-[156px] w-fit max-2xl:mb-[150px]"
 					>
 						<button
-							class="text-white text-[16px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B] font-[900] font-museo py-[30px] px-[44px] rounded-[5px] w-[350px]"
+							class="text-white text-[16px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B] font-[900] font-museo py-[30px]
+							 px-[44px] rounded-[5px] w-[350px] max-2xl:text-[15px]"
 							style="box-shadow: 0px 0px 60px 0px rgba(255, 194, 86, 0.50);
 					#CFA55B
 					"
@@ -93,20 +103,20 @@ import "../layouts/font.css";
 						</button>
 					</div>
 				</div>
-				<div class="bottom">
+				<div class="bottom max-2xl:w-[100%]">
 					<ul class="flex" style="justify-content: space-between">
 						<li
 							class="flex items-center justify-center gap-[10px] w-[300px]"
 						>
 							<p
-								class="text-white text-[16px] font-[400] font-roboto"
+								class="text-white text-[16px] font-[400] font-roboto max-2xl:text-[17px]"
 							>
 								Продано недвижимости на 3 млрд рублей за 5 лет
 							</p>
 						</li>
 						<li class="flex items-center justify-center gap-[10px]">
 							<p
-								class="text-white text-[16px] font-[400] font-roboto"
+								class="text-white text-[16px] font-[400] font-roboto max-2xl:text-[17px]"
 							>
 								Юридическое сопровождение
 							</p>
@@ -115,7 +125,7 @@ import "../layouts/font.css";
 							class="flex items-center justify-center gap-[10px] w-[270px]"
 						>
 							<p
-								class="text-white text-[16px] font-[400] font-roboto"
+								class="text-white text-[16px] font-[400] font-roboto max-2xl:text-[17px]"
 							>
 								Квартиры по Москве и области на любой выбор
 							</p>
@@ -128,23 +138,23 @@ import "../layouts/font.css";
 
 	<!-- Почему мы продаем дорого -->
 	<section class="pt-[78px] pb-[118px]">
-		<div class="mx-[300px]">
+		<div class="mx-[300px] max-2xl:mx-[150px]">
 			<h2
-				class="text-center text-[#424242] text-[36px] font-[900] font-museo mb-[51px]"
+				class="text-center text-[#424242] text-[36px] font-[900] font-museo mb-[51px] max-2xl:text-[32px]"
 			>
 				Почему мы продаем дорого и делаем это в <span
 					class="text-[#CFA55B]">2 раза быстрее</span
 				>
 			</h2>
 			<div class="all flex mb-[74px]">
-				<div class="right mr-auto">
+				<div class="left mr-auto">
 					<p
 						class="mb-[24px] text-[#CFA55B] text-[96px] font-roboto font-[900] uppercase opacity-[0.3]"
 					>
 						01
 					</p>
 					<h3
-						class="mb-[42px] text-[#424242] text-[30px] font-[900] uppercase font-museo"
+						class="mb-[42px] text-[#424242] text-[30px] font-[900] uppercase font-museo max-2xl:text-[25px]"
 					>
 						Собственная база покупателей
 					</h3>
@@ -208,7 +218,7 @@ import "../layouts/font.css";
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[500] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo max-2xl:text-[15px]"
 							>
 								Создаем спрос на объект еще до размещения его в
 								рекламе
@@ -273,7 +283,7 @@ import "../layouts/font.css";
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[500] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo max-2xl:text-[15px]"
 							>
 								Используем закрытые базы риэлторов
 							</p>
@@ -337,7 +347,7 @@ import "../layouts/font.css";
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[500] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo max-2xl:text-[15px]"
 							>
 								Продаем через собственную наработанную базу из
 								6000
@@ -345,14 +355,14 @@ import "../layouts/font.css";
 						</li>
 					</ul>
 					<button
-						class="text-white text-[18px] font-[900] font-museo py-[32px] px-[74px] rounded-[5px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B]"
+						class="text-white text-[18px] font-[900] font-museo py-[32px] px-[74px] rounded-[5px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B] max-2xl:text-[16px]"
 						style="
 					box-shadow: 0px 20px 40px 0px rgba(207, 165, 91, 0.40);"
 						>Получите превью предложения</button
 					>
 				</div>
 				<div
-					class="flex bg-no-repeat bg-cover w-[649px] bg-left h-[432px] mt-[135px]"
+					class="flex bg-no-repeat bg-cover w-[55%] bg-left h-[432px] mt-[135px] max-2xl:bg-contain"
 					style="background-image: url(/sect-2.png);"
 				>
 				</div>
@@ -360,7 +370,7 @@ import "../layouts/font.css";
 
 			<div class="all mb-[74px] flex">
 				<div
-					class="flex bg-no-repeat bg-cover w-[649px] bg-left h-[432px] mt-[135px]"
+					class="flex bg-no-repeat bg-cover w-[55%] bg-left h-[432px] mt-[135px] max-2xl:bg-contain"
 					style="background-image: url(/sect-2.png);"
 				>
 				</div>
@@ -371,7 +381,7 @@ import "../layouts/font.css";
 						02
 					</p>
 					<h3
-						class="mb-[42px] text-[#424242] text-[30px] font-[900] uppercase font-museo"
+						class="mb-[42px] text-[#424242] text-[30px] font-[900] uppercase font-museo max-2xl:text-[25px]"
 					>
 						Собственная база покупателей
 					</h3>
@@ -435,7 +445,7 @@ import "../layouts/font.css";
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[500] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo max-2xl:text-[15px]"
 							>
 								Создаем спрос на объект еще до размещения его в
 								рекламе
@@ -500,7 +510,7 @@ import "../layouts/font.css";
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[500] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo max-2xl:text-[15px]"
 							>
 								Используем закрытые базы риэлторов
 							</p>
@@ -564,7 +574,7 @@ import "../layouts/font.css";
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[500] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo max-2xl:text-[15px]"
 							>
 								Продаем через собственную наработанную базу из
 								6000
@@ -572,7 +582,7 @@ import "../layouts/font.css";
 						</li>
 					</ul>
 					<button
-						class="text-white text-[18px] font-[900] font-museo py-[32px] px-[74px] rounded-[5px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B]"
+						class="text-white text-[18px] font-[900] font-museo py-[32px] px-[74px] rounded-[5px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B] max-2xl:text-[16px]"
 						style="
 					box-shadow: 0px 20px 40px 0px rgba(207, 165, 91, 0.40);"
 						>Получите превью предложения</button
@@ -581,14 +591,14 @@ import "../layouts/font.css";
 			</div>
 
 			<div class="all flex">
-				<div class="right mr-auto">
+				<div class="left mr-auto">
 					<p
 						class="mb-[24px] text-[#CFA55B] text-[96px] font-roboto font-[900] uppercase opacity-[0.3]"
 					>
 						03
 					</p>
 					<h3
-						class="mb-[42px] text-[#424242] text-[30px] font-[900] uppercase font-museo"
+						class="mb-[42px] text-[#424242] text-[30px] font-[900] uppercase font-museo max-2xl:text-[25px]"
 					>
 						Собственная база покупателей
 					</h3>
@@ -652,7 +662,7 @@ import "../layouts/font.css";
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[500] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo max-2xl:text-[15px]"
 							>
 								Создаем спрос на объект еще до размещения его в
 								рекламе
@@ -717,7 +727,7 @@ import "../layouts/font.css";
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[500] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo max-2xl:text-[15px]"
 							>
 								Используем закрытые базы риэлторов
 							</p>
@@ -781,7 +791,7 @@ import "../layouts/font.css";
 							</svg>
 
 							<p
-								class="text-[#424242] text-[18px] font-[500] font-museo"
+								class="text-[#424242] text-[18px] font-[500] font-museo max-2xl:text-[15px]"
 							>
 								Продаем через собственную наработанную базу из
 								6000
@@ -789,14 +799,14 @@ import "../layouts/font.css";
 						</li>
 					</ul>
 					<button
-						class="text-white text-[18px] font-[900] font-museo py-[32px] px-[74px] rounded-[5px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B]"
+						class="text-white text-[18px] font-[900] font-museo py-[32px] px-[74px] rounded-[5px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B] max-2xl:text-[16px]"
 						style="
 					box-shadow: 0px 20px 40px 0px rgba(207, 165, 91, 0.40);"
 						>Получите превью предложения</button
 					>
 				</div>
 				<div
-					class="flex bg-no-repeat bg-cover w-[649px] bg-left h-[432px] mt-[135px]"
+					class="flex bg-no-repeat bg-cover w-[55%] bg-left h-[432px] mt-[135px] max-2xl:bg-contain"
 					style="background-image: url(/sect-2.png);"
 				>
 				</div>
@@ -809,31 +819,31 @@ import "../layouts/font.css";
 		style="background-image: url(/bg-2.png)"
 	>
 		<div
-			class="info h-[736px] w-[] mx-[300px] flex items-center justify-center"
+			class="info h-[736px] w-[] mx-[300px] flex items-center justify-center max-2xl:mx-[150px]"
 		>
 			<div class="left flex flex-col justify-center mr-auto w-[45%]">
 				<h2
-					class="mb-[53px] text-[36px] text-white font-[900] w-[80%] font-museo"
+					class="mb-[53px] text-[36px] text-white font-[900] w-[80%] font-museo max-2xl:text-[30px] max-2xl:w-[90%] max-2xl:mb-[45px]"
 				>
 					<span class="text-[#CFA55B]">Продажа недвижимости</span> в Москве
 					и Подмосковье
 				</h2>
 				<p
-					class="mb-[29px] text-white text-[18px] font-[700] font-museo"
+					class="mb-[29px] text-white text-[18px] font-[700] font-museo max-2xl:text-[16px] max-2xl:mb-[25px]"
 				>
 					Мы оказываем риэлторские услуги по аренде и продаже
 					недвижимости во всех сегментах. С помощью наших специалистов
 					вы сможете купить элитную недвижимость в Москве и
 					Подмосковье, а также приобрести жилье эконом-класса .
 				</p>
-				<p class="text-white text-[18px] font-[700] font-museo">
+				<p class="text-white text-[18px] font-[700] font-museo max-2xl:text-[16px]">
 					Специалисты нашего агентства помогут в подборе оптимального
 					для вас варианта и оформят сделку по купле-продаже
 					недвижимости максимально надежно и быстро!
 				</p>
 			</div>
 			<div
-				class="w-[35%] h-[85%]"
+				class="w-[35%] h-[85%] max-2xl:w-[45%]"
 				style="border-radius: 10px;
 			border: 3px solid #CFA55B;
 			box-shadow: 0px 4px 30px 0px rgba(207, 165, 91, 0.50);"
@@ -1057,7 +1067,7 @@ import "../layouts/font.css";
 						</li>
 					</ul>
 					<button
-						class="text-white text-[18px] font-[900] font-museo py-[25px] px-[94px] rounded-[5px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B]"
+						class="text-white text-[18px] font-[900] font-museo py-[25px] px-[94px] rounded-[5px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B] max-2xl:text-[16px]"
 						style="
 				box-shadow: 0px 4px 25px 0px rgba(207, 165, 91, 0.50);"
 						>Больше информации</button
@@ -1068,7 +1078,7 @@ import "../layouts/font.css";
 	</section>
 
 	<!-- Каталог недвижимости -->
-	<section class="pt-[85px] pb-[95px] mx-[300px]">
+	<section class="pt-[85px] pb-[95px] mx-[300px] max-2xl:mx-[150px]">
 		<div class="h-screen flex flex-col items-center justify-center">
 			<h2
 				class="text-[#424242] text-center text-[36px] font-[900] font-roboto mb-[57px]"
@@ -1079,7 +1089,7 @@ import "../layouts/font.css";
 				<li>
 					<button
 						class="text-[#CFA55B] border-[2px] border-[solid] border-[#CFA55B] text-center text-[16px] font-[900] font-museo px-[43px] py-[23px] transition-all
-						 hover:bg-[#CFA55B] hover:text-[white] active:bg-[#FFC256] active:border-[#FFC256]"
+						 hover:bg-[#CFA55B] hover:text-[white] active:bg-[#FFC256] active:border-[#FFC256] max-2xl:text-[12px]"
 						style="border-radius: 5px;"
 					>
 						Квартиры и новостройки</button
@@ -1088,7 +1098,7 @@ import "../layouts/font.css";
 				<li>
 					<button
 						class="text-[#CFA55B] border-[2px] border-[solid] border-[#CFA55B] text-center text-[16px] font-[900] font-museo px-[43px] py-[23px] transition-all
-						hover:bg-[#CFA55B] hover:text-[white] active:bg-[#FFC256] active:border-[#FFC256]"
+						hover:bg-[#CFA55B] hover:text-[white] active:bg-[#FFC256] active:border-[#FFC256] max-2xl:text-[12px]"
 						style="border-radius: 5px;"
 					>
 						Новостройки</button
@@ -1097,7 +1107,7 @@ import "../layouts/font.css";
 				<li>
 					<button
 						class="text-[#CFA55B] border-[2px] border-[solid] border-[#CFA55B] text-center text-[16px] font-[900] font-museo px-[43px] py-[23px] transition-all
-						hover:bg-[#CFA55B] hover:text-[white] active:bg-[#FFC256] active:border-[#FFC256]"
+						hover:bg-[#CFA55B] hover:text-[white] active:bg-[#FFC256] active:border-[#FFC256] max-2xl:text-[12px]"
 						style="border-radius: 5px;"
 					>
 						Аренда квартир и комнат</button
@@ -1106,14 +1116,14 @@ import "../layouts/font.css";
 				<li>
 					<button
 						class="text-[#CFA55B] border-[2px] border-[solid] border-[#CFA55B] text-center text-[16px] font-[900] font-museo px-[43px] py-[23px] transition-all
-						hover:bg-[#CFA55B] hover:text-[white] active:bg-[#FFC256] active:border-[#FFC256]"
+						hover:bg-[#CFA55B] hover:text-[white] active:bg-[#FFC256] active:border-[#FFC256] max-2xl:text-[12px]"
 						style="border-radius: 5px;"
 					>
 						Загородная</button
 					>
 				</li>
 			</ul>
-			<div class="flex">
+			<div class="flex items-center justify-center">
 				<button>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -1148,12 +1158,12 @@ import "../layouts/font.css";
 			</div>
 			<div class="mb-[47px]">
 				<p
-					class="text-[#CFA55B] text-[30px] font-[900] font-museo text-center"
+					class="text-[#CFA55B] text-[30px] font-[900] font-museo text-center max-2xl:text-[28px]"
 				>
 					3-комн. квартира, 125,4 м²
 				</p>
 				<p
-					class="text-[#424242] text-[18px] font-[700] font-museo text-center"
+					class="text-[#424242] text-[18px] font-[700] font-museo text-center max-2xl:text-[16px]"
 				>
 					в ЖК «Река», Квартал 10 корпус 1, сдача в 4 кв. 2021
 				</p>
@@ -1161,51 +1171,51 @@ import "../layouts/font.css";
 			<ul class="w-[100%] flex" style="justify-content: space-between">
 				<li class="flex flex-col">
 					<p
-						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center"
+						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center max-2xl:text-[28px]"
 					>
 						125,4 м²
 					</p>
-					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo">
+					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo max-2xl:text-[22px]">
 						Общая
 					</p>
 				</li>
 				<li class="flex flex-col">
 					<p
-						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center"
+						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center max-2xl:text-[28px]"
 					>
 						97,9 м²
 					</p>
-					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo">
+					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo max-2xl:text-[22px]">
 						Жилая
 					</p>
 				</li>
 				<li class="flex flex-col">
 					<p
-						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center"
+						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center max-2xl:text-[28px]"
 					>
 						27,5 м²
 					</p>
-					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo">
+					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo max-2xl:text-[22px]">
 						Кухня
 					</p>
 				</li>
 				<li class="flex flex-col">
 					<p
-						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center"
+						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center max-2xl:text-[28px]"
 					>
 						7 из 11
 					</p>
-					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo">
+					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo max-2xl:text-[22px]">
 						Этаж
 					</p>
 				</li>
 				<li class="flex flex-col">
 					<p
-						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center"
+						class="text-[#CFA55B] text-[30px] font-[700] font-museo text-center max-2xl:text-[28px]"
 					>
 						2021
 					</p>
-					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo">
+					<p class="text-[#8C8C8C] text-[24px] font-[500] font-museo max-2xl:text-[22px]">
 						Срок сдачи
 					</p>
 				</li>
@@ -1217,14 +1227,14 @@ import "../layouts/font.css";
 		class="py-[100px] bg-no-repeat bg-cover"
 		style="background-image: url(/bg-3.png);"
 	>
-		<div class="ml-[300px] flex flex-col items-start justify-start">
+		<div class="ml-[300px] flex flex-col items-start justify-start max-2xl:ml-[150px]">
 			<h2
-				class="text-white text-[36px] font-[900] font-museo mb-[30px] w-[50%]"
+				class="text-white text-[36px] font-[900] font-museo mb-[30px] w-[50%] max-2xl:text-[34px]"
 			>
 				Еще остались вопросы?
 			</h2>
 			<p
-				class="mb-[44px] text-white text-[18px] font-[700] font-museo w-[40%]"
+				class="mb-[44px] text-white text-[18px] font-[700] font-museo w-[40%] max-2xl:text-[17px]"
 			>
 				Наши эксперты помогут осуществить любые сделки с недвижимостью —
 				обмен, покупку или продажу недвижимости в Москве и области,
@@ -1236,7 +1246,7 @@ import "../layouts/font.css";
 				class="w-[100%]"
 			>
 				<input
-					class="pl-[40px] py-[25px] mr-[27px] w-[35%]"
+					class="pl-[40px] py-[25px] mr-[27px] w-[35%] max-2xl:w-[50%]"
 					type="tel"
 					name="tel"
 					id="tel"
@@ -1247,7 +1257,7 @@ import "../layouts/font.css";
 					box-shadow: 0px 4px 20px 0px rgba(66, 66, 66, 0.30);"
 				/>
 				<button
-					class="text-white text-[18px] font-[900] font-museo py-[25px] px-[39px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B]"
+					class="text-white text-[18px] font-[900] font-museo py-[25px] px-[39px] transition-all hover:bg-[#FFC256] active:bg-[#CFA55B] bg-[#CFA55B] max-2xl:text-[16px]"
 					style="border-radius: 10px;
 				box-shadow: 0px 4px 60px 0px rgba(255, 194, 86, 0.40);"
 					>Получить консультацию</button
@@ -1256,7 +1266,7 @@ import "../layouts/font.css";
 		</div>
 	</section>
 
-	<footer class="mx-[300px] py-[17px]">
+	<footer class="mx-[300px] py-[17px] max-2xl:mx-[150px]">
 		<div class="flex">
 			<div class="left mr-auto flex items-center gap-[18px]">
 				<svg
@@ -1274,13 +1284,13 @@ import "../layouts/font.css";
 						fill="#CFA55B"></path>
 				</svg>
 				<p
-					class="text-[#424242] text-[14px] font-[500] font-museo w-[47%]"
+					class="text-[#424242] text-[14px] font-[500] font-museo w-[47%] max-2xl:text-[12px]"
 				>
 					610000 г. Киров, ул. Карла Маркса 21, офис 334
 				</p>
 			</div>
 			<div
-				class="left flex items-center text-[#424242] text-[24px] font-[700] font-museo uppercase transition-all hover:text-[#FFC256] active:text-[#CFA55B]"
+				class="left flex items-center text-[#424242] text-[24px] font-[700] font-museo uppercase transition-all hover:text-[#FFC256] active:text-[#CFA55B] max-2xl:text-[20px]"
 			>
 				<a href="tel:+76845550102">+7 (684) 555-01-02</a>
 			</div>
