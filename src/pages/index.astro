@@ -1149,9 +1149,11 @@ import "../layouts/font.css";
 
 	<!-- Каталог недвижимости -->
 	<section
-		class="pt-[85px] pb-[95px] mx-[300px] max-2xl:mx-[150px] max-xl:mx-[75px] max-lg:py-0 max-md:mx-[45px]"
+		class="pt-[40px] pb-[120px] md:pb-[80px] mx-[300px] max-2xl:mx-[150px] max-xl:mx-[75px] max-lg:py-0 max-md:mx-[45px] 2xl:pb-[150px] max-xl:pb-[100px] md:pt-[40px]"
 	>
-		<div class="h-screen max-sm:h-full max-sm:py-[30px] flex flex-col items-center md:pt-[50px] 2xl:justify-center">
+		<div
+			class="h-screen max-sm:h-full max-sm:py-[30px] flex flex-col items-center 2xl:pt-[0px]"
+		>
 			<h2
 				class="text-[#424242] text-center text-[36px] font-[900] font-roboto mb-[57px] max-lg:mb-0 max-lg:opacity-40 max-md:text-[24px]"
 			>
@@ -1163,7 +1165,8 @@ import "../layouts/font.css";
 				Каталог <span class="text-[#CFA55B]">недвижимости</span>
 			</h2>
 			<h2
-				class="text-[#424242] text-center text-[36px] font-[900] font-roboto mb-[57px] 2xl:hidden max-2xl:hidden max-xl:hidden max-lg:inline max-lg:opacity-100 max-lg:mb-[35px] max-md:text-[24px]"
+				class="text-[#424242] text-center text-[36px] font-[900] font-roboto mb-[57px] 2xl:hidden max-2xl:hidden max-xl:hidden max-lg:inline max-lg:opacity-100
+				 max-lg:mb-[35px] max-md:text-[24px]"
 			>
 				Каталог <span class="text-[#CFA55B]">недвижимости</span>
 			</h2>
@@ -1221,7 +1224,12 @@ import "../layouts/font.css";
 						</g>
 					</svg>
 				</button>
-				<img class="object-cover" src="/sect-3.png" alt="hous" />
+				<div
+					class="2xl:mb-[20px] xl:mb-[20px] xl:w-[120vh] xl:h-[55vh] bg-no-repeat bg-cover 2xl:w-[130vh] 2xl:h-[65vh]  md:h-[60vh] md:mb-[20px]
+					lg:w-[100vh] md:w-[70vh] sm:w-[70vh] sm:h-[50vh]"
+					style="background-image: url(/sect-3.png);"
+				>
+				</div>
 				<button class="max-md:hidden">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -1391,8 +1399,9 @@ import "../layouts/font.css";
 				</p>
 			</div>
 			<div
-				class="left flex items-center text-[#424242] text-[24px] font-[700] font-museo uppercase transition-all hover:text-[#FFC256] active:text-[#CFA55B] max-2xl:text-[20px] max-xl:text-[18px]
-				max-lg:text-[16px] max-md:text-[10px]"
+				class="left flex items-center text-[#424242] text-[24px] font-[700] font-museo uppercase transition-all hover:text-[#FFC256] active:text-[#CFA55B]
+				 max-2xl:text-[20px] max-xl:text-[18px]
+				max-lg:text-[16px] max-md:text-[9px]"
 			>
 				<a href="tel:+76845550102">+7 (684) 555-01-02</a>
 			</div>
