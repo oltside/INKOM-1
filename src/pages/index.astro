@@ -8,126 +8,145 @@ import "../layouts/font.css";
 		class="h-screen bg-no-repeat bg-cover pt-[23px] pb-[23px]"
 		style="background-image: url(/hero-phone.png);"
 	>
-		<header
-			class="header ml-[300px] flex items-center mb-[180px] max-2xl:ml-[150px] max-xl:ml-[0px] max-xl:justify-center max-lg:justify-center max-md:justify-center max-md:mb-[100px] max-sm:mb-[60px]"
+	<header
+	class="header ml-[300px] flex items-center mb-[180px] max-2xl:ml-[150px] max-xl:ml-[0px] max-xl:justify-center max-lg:justify-center max-md:justify-center max-md:mb-[100px] max-sm:mb-[60px]"
+>
+	<div class="content flex max-2xl:justify-center">
+		<div
+			class="left mr-[114px] flex max-2xl:mr-[184px] max-xl:mr-[10%] max-lg:mr-[70%] max-md:mr-[70%]"
 		>
-			<div class="content flex max-2xl:justify-center">
-				<div
-					class="left mr-[114px] flex max-2xl:mr-[184px] max-xl:mr-[10%] max-lg:mr-[70%] max-md:mr-[70%]"
+			<div class="flex items-center">
+				<a
+					href="#"
+					class="flex flex-col mr-[110px] max-2xl:mr-[82px] max-xl:mr-[60px] max-lg:mr-[45px]"
 				>
-					<div class="flex items-center">
-						<a
-							href="#"
-							class="flex flex-col mr-[110px] max-2xl:mr-[82px] max-xl:mr-[60px] max-lg:mr-[45px]"
-						>
-							<h1
-								class="text-white text-[51px] font-[900] h-14 uppercase font-museo max-2xl:text-[41px] max-xl:text-[35px] max-lg:text-[30px]"
-							>
-								Инком
-							</h1>
-							<h2
-								class="text-[#CFA55B] text-[27px] font-[700] font-museo max-2xl:text-[22px] max-xl:text-[19px] max-lg:text-[16px]"
-							>
-								Недвижимость
-							</h2>
-						</a>
-						<p
-							class="text-white text-[18px] font-[500] font-museo w-[40%] max-2xl:text-[15px] max-2xl:w-[49%] max-xl:text-[13px] max-xl:w-[51%] max-lg:text-[12px] max-lg:w-[195px] max-md:w-[25px] max-md:text-[10px]
-					max-md:hidden"
-						>
-							Все работают с недвижимостью, а мы с людьми
-						</p>
-					</div>
-				</div>
-				<div class="right flex items-center w-[38%] max-2xl:w-[53%]">
-					<nav class="nav flex w-[110%] items-center">
-						<a
-							href="tel:+76845550102"
-							class="text-white text-[24px] font-[700] transition-all hover:text-[#FFC256] active:text-[#CFA55B] font-museo mr-[40px] w-[63%]
-					max-2xl:text-[18px] max-2xl:w-[45%] max-2xl:mr-[0px] max-xl:mr-[15px] max-xl:text-[17px]"
-							>+7 (684) 555-01-02</a
-						>
-						<button
-							class="text-[#FFC256] w-[63%] hover:text-white hover:bg-[#FFC256] active:bg-[#CFA55B] active:border-[#CFA55B] transition-all
-				 text-[14px] font-[700]
-				 font-museo px-[25px] py-[15px] rounded-[5px] border-sodil border-[#FFC256] border-[2px] max-2xl:text-[13px] max-2xl:w-[47%] max-xl:text-[12px] max-xl:w-[58%]"
-							style="box-shadow: 0px 0px 30px 0px #FFC256;"
-						>
-							Бесплатная консультация
-						</button>
-					</nav>
-					<div
-						class="btn 2xl:hidden max-2xl:hidden max-xl:hidden max-lg:flex flex relative z-50 items-center w-[30px] h-[18px]"
+					<h1
+						class="text-white text-[51px] font-[900] h-14 uppercase font-museo max-2xl:text-[41px] max-xl:text-[35px] max-lg:text-[30px]"
 					>
-						<style>
-							.btn::before,
-							.btn::after {
-								content: "";
-								position: absolute;
-								height: 2px;
-								width: 100%;
-								background-color: #faf6f2;
-								transition: all 0.3s ease-in-out;
-							}
-							.btn::before {
-								top: 0;
-							}
-							.btn::after {
-								bottom: 0;
-							}
-							.btn.active span {
-								transform: scale(0);
-							}
-							.btn.active::before {
-								top: 50%;
-								transform: rotate(-45deg) translate(0, -50%);
-							}
-							.btn.active::after {
-								bottom: 50%;
-								transform: rotate(45deg) translate(0, 50%);
-							}
-
-							.btn {
-								display: flex;
-							}
-							.nav {
-								display: none;
-								flex-direction: column;
-								position: fixed;
-								height: 100%;
-								width: 100%;
-								top: 0;
-								bottom: 0;
-								left: 0;
-								z-index: 50;
-								overflow-y: auto;
-								padding: 50px 40px;
-								background-color: black;
-								/* animation: burgerAnimation 0.3s ease-in-out; */
-							}
-							.nav.open {
-								display: flex !important;
-							}
-						</style>
-						<span
-							class="span h-[2px] w-[80%] scale-[1] bg-[#FAF6F2]"
-						></span>
-					</div>
-				</div>
+						Инком
+					</h1>
+					<h2
+						class="text-[#CFA55B] text-[27px] font-[700] font-museo max-2xl:text-[22px] max-xl:text-[19px] max-lg:text-[16px]"
+					>
+						Недвижимость
+					</h2>
+				</a>
+				<p
+					class="text-white text-[18px] font-[500] font-museo w-[40%] max-2xl:text-[15px] max-2xl:w-[49%] max-xl:text-[13px] max-xl:w-[51%] max-lg:text-[12px] max-lg:w-[195px] max-md:w-[25px] max-md:text-[10px]
+					max-md:hidden"
+				>
+					Все работают с недвижимостью, а мы с людьми
+				</p>
 			</div>
-			<script>
-				document.addEventListener("DOMContentLoaded", function () {
+		</div>
+		<div class="right flex items-center w-[38%] max-2xl:w-[53%]">
+			<nav class="nav flex w-[110%] items-center">
+				<a
+					href="tel:+76845550102"
+					class="text-white text-[24px] font-[700] transition-all hover:text-[#FFC256] active:text-[#CFA55B] font-museo mr-[40px] w-[63%]
+					max-2xl:text-[18px] max-2xl:w-[45%] max-2xl:mr-[0px] max-xl:mr-[15px] max-xl:text-[17px] max-lg:w-[25vh] max-lg:mb-[20px]"
+					>+7 (684) 555-01-02</a
+				>
+				<button
+					class="text-[#FFC256] w-[63%] hover:text-white hover:bg-[#FFC256] active:bg-[#CFA55B] active:border-[#CFA55B] transition-all
+				 text-[14px] font-[700]
+				 font-museo px-[25px] py-[15px] rounded-[5px] border-sodil border-[#FFC256] border-[2px] max-2xl:text-[13px] max-2xl:w-[47%] max-xl:text-[12px] max-xl:w-[58%]
+				  max-lg:w-[30vh]"
+					style="box-shadow: 0px 0px 30px 0px #FFC256;"
+				>
+					Бесплатная консультация
+				</button>
+			</nav>
+			<div
+				class="btn menu-icon 2xl:hidden max-2xl:hidden max-xl:hidden max-lg:flex flex relative z-50 items-center w-[30px] h-[18px]"
+			>
+				<style>
+					.btn::before,
+					.btn::after {
+						content: "";
+						position: absolute;
+						height: 2px;
+						width: 100%;
+						background-color: #faf6f2;
+						transition: all 0.3s ease-in-out;
+					}
+					.btn::before {
+						top: 0;
+					}
+					.btn::after {
+						bottom: 0;
+					}
+					.btn.active span {
+						transform: scale(0);
+					}
+					.btn.active::before {
+						top: 50%;
+						transform: rotate(-45deg) translate(0, -50%);
+					}
+					.btn.active::after {
+						bottom: 50%;
+						transform: rotate(45deg) translate(0, 50%);
+					}
+
+					.btn {
+						display: flex;
+					}
+					.nav {
+						display: none;
+						flex-direction: column;
+						align-items: start;
+						position: fixed;
+						height: 100%;
+						width: 100%;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						z-index: 50;
+						overflow-y: auto;
+						padding: 50px 40px;
+						background-color: black;
+						/* animation: burgerAnimation 0.3s ease-in-out; */
+					}
+					.nav.open {
+						display: flex !important;
+					}
+					.phone-visible,
+					.consultation-visible {
+						display: inline-block;
+					}
+					.menu-icon {
+						display: none;
+					}
+					@media (max-width: 1024px) {
+						.phone-visible,
+						.consultation-visible {
+							display: none;
+						}
+						.menu-icon {
+							display: flex;
+						}
+					}
+				</style>
+				<span
+					class="span h-[2px] w-[80%] scale-[1] bg-[#FAF6F2]"
+				></span>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document
+				.querySelector(".btn")
+				.addEventListener("click", function () {
+					this.classList.toggle("active");
 					document
-						.querySelector(".btn")
-						.addEventListener("click", function () {
-							this.classList.toggle("active");
-							document
-								.querySelector(".nav")
-								.classList.toggle("open");
-						});
+						.querySelector(".nav")
+						.classList.toggle("open");
 				});
-			</script>
-		</header>
+		});
+	</script>
+</header>
+
 
 		<div class="hero">
 			<div
