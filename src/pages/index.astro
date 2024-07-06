@@ -33,27 +33,29 @@ import "../layouts/font.css";
 						</a>
 						<p
 							class="text-white text-[18px] font-[500] font-museo w-[40%] max-2xl:text-[15px] max-2xl:w-[49%] max-xl:text-[13px] max-xl:w-[51%] max-lg:text-[12px] max-lg:w-[195px] max-md:w-[25px] max-md:text-[10px]
-							max-md:hidden"
+					max-md:hidden"
 						>
 							Все работают с недвижимостью, а мы с людьми
 						</p>
 					</div>
 				</div>
 				<div class="right flex items-center w-[38%] max-2xl:w-[53%]">
-					<a
-						href="tel:+76845550102"
-						class="text-white text-[24px] font-[700] transition-all hover:text-[#FFC256] active:text-[#CFA55B] font-museo mr-[40px] w-[63%]
-						max-2xl:text-[18px] max-2xl:w-[45%] max-2xl:mr-[0px] max-xl:mr-[15px] max-xl:text-[17px] max-lg:hidden"
-						>+7 (684) 555-01-02</a
-					>
-					<button
-						class="text-[#FFC256] w-[63%] hover:text-white hover:bg-[#FFC256] active:bg-[#CFA55B] active:border-[#CFA55B] transition-all
-						 text-[14px] font-[700]
-						 font-museo px-[25px] py-[15px] rounded-[5px] border-sodil border-[#FFC256] border-[2px] max-2xl:text-[13px] max-2xl:w-[47%] max-xl:text-[12px] max-xl:w-[58%] max-lg:hidden"
-						style="box-shadow: 0px 0px 30px 0px #FFC256;"
-					>
-						Бесплатная консультация
-					</button>
+					<nav class="nav flex w-[110%] items-center">
+						<a
+							href="tel:+76845550102"
+							class="text-white text-[24px] font-[700] transition-all hover:text-[#FFC256] active:text-[#CFA55B] font-museo mr-[40px] w-[63%]
+					max-2xl:text-[18px] max-2xl:w-[45%] max-2xl:mr-[0px] max-xl:mr-[15px] max-xl:text-[17px]"
+							>+7 (684) 555-01-02</a
+						>
+						<button
+							class="text-[#FFC256] w-[63%] hover:text-white hover:bg-[#FFC256] active:bg-[#CFA55B] active:border-[#CFA55B] transition-all
+				 text-[14px] font-[700]
+				 font-museo px-[25px] py-[15px] rounded-[5px] border-sodil border-[#FFC256] border-[2px] max-2xl:text-[13px] max-2xl:w-[47%] max-xl:text-[12px] max-xl:w-[58%]"
+							style="box-shadow: 0px 0px 30px 0px #FFC256;"
+						>
+							Бесплатная консультация
+						</button>
+					</nav>
 					<div
 						class="btn 2xl:hidden max-2xl:hidden max-xl:hidden max-lg:flex flex relative z-50 items-center w-[30px] h-[18px]"
 					>
@@ -84,12 +86,47 @@ import "../layouts/font.css";
 								bottom: 50%;
 								transform: rotate(45deg) translate(0, 50%);
 							}
+
+							.btn {
+								display: flex;
+							}
+							.nav {
+								display: none;
+								flex-direction: column;
+								position: fixed;
+								height: 100%;
+								width: 100%;
+								top: 0;
+								bottom: 0;
+								left: 0;
+								z-index: 50;
+								overflow-y: auto;
+								padding: 50px 40px;
+								background-color: black;
+								/* animation: burgerAnimation 0.3s ease-in-out; */
+							}
+							.nav.open {
+								display: flex !important;
+							}
 						</style>
-						<span class="span h-[2px] w-[80%] scale-[1] bg-[#FAF6F2]"
+						<span
+							class="span h-[2px] w-[80%] scale-[1] bg-[#FAF6F2]"
 						></span>
 					</div>
 				</div>
 			</div>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					document
+						.querySelector(".btn")
+						.addEventListener("click", function () {
+							this.classList.toggle("active");
+							document
+								.querySelector(".nav")
+								.classList.toggle("open");
+						});
+				});
+			</script>
 		</header>
 
 		<div class="hero">
